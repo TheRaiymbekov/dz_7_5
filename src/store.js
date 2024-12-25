@@ -1,11 +1,8 @@
+import { configureStore } from '@reduxjs/toolkit';
+import pokemonReducer from './features/pokemonSlice';
 
-import { configureStore } from "@reduxjs/toolkit";
-import tasksReducer from "./features/tasksSlice";
-
-const store = configureStore({
+export const store = configureStore({
     reducer: {
-        tasks: tasksReducer,
+        pokemon: pokemonReducer,
     },
 });
-
-export default store;

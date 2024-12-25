@@ -1,16 +1,13 @@
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './store';
+import PokemonList from './components/PokemonList';
+import './App.css';
 
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import AddTaskPage from "./pages/AddTaskPage";
-
-const App = () => {
-  return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/add-task" element={<AddTaskPage />} />
-      </Routes>
-  );
-};
+const App = () => (
+    <Provider store={store}>
+      <PokemonList />
+    </Provider>
+);
 
 export default App;

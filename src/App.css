@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+*{
+  background-color: yellow;
+}
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pokemon-grid{
+  display: flex;
+  flex-wrap: wrap;
+}
